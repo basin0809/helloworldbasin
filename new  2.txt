@@ -1,0 +1,2 @@
+git clone ssh://54262ba7e0b8cd6c8d0000f9@randomnumgenerator-helloworldbasin.rhcloud.com/~/git/randomnumgenerator.git/
+cd randomnumgenerator/
