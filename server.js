@@ -3,7 +3,8 @@
 // or import statement in other languages
 var http = require("http");
 var url = require("url");
-
+var port =  process.env.OPENSHIFT_NODEJS_PORT || 8080;   // Port 8080 if you run locally
+var address =  process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1"; // Listening to localhost if you run locally
 // The most important line in any Node file.  This function
 // does the actual process of creating the server.  Technically,
 // Node tells the underlying operating system that whenever a
@@ -46,4 +47,4 @@ http.createServer(function(request, response) {
    // When we create the server, we have to explicitly connect the HTTP server to
    // a port.  Standard HTTP port is 80, so we'll connect it to that one.
 }).listen(port, address);
-console.log('Random Number Generator Running...');
+console.log('generating random number...');
